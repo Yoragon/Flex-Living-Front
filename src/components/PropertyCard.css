@@ -1,0 +1,33 @@
+.property-card {
+    border-top: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px;
+    margin: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+.property-card:hover{
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 14px;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}

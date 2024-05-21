@@ -36,3 +36,75 @@
     transform: rotate(360deg);
   }
 }
+
+.splash-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  z-index: 1000;
+}
+
+.logo {
+  position: absolute;
+  left: 50%; /* Centrer horizontalement */
+  top: 50%; /* Commencer au milieu verticalement */
+  transform: translate(-50%, -50%); /* Ajuster pour un centrage précis */
+  animation: moveUp 2s ease-in-out forwards;
+  z-index: 9999; /* Appliquer l'animation */
+}
+
+/* Animation pour faire tourner le logo */
+@keyframes moveUp {
+  from {
+    transform: translateY(0); /* Commence au milieu */
+  }
+  to {
+    transform: translateY(-48vh); /* Montez tout en haut */
+  }
+}
+
+.top-half {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  background-color: var(--primary-color);
+  animation: slideOutTop 3s ease forwards;
+  animation-delay: 0.5s;
+  
+}
+
+.bottom-half {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background-color: var(--primary-color);
+  animation: slideOutBottom 3s ease forwards;
+  animation-delay:0.5s ;
+
+}
+
+/* Animation pour ouvrir le haut vers le haut */
+@keyframes slideOutTop {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+/* Animation pour ouvrir le bas vers le bas */
+@keyframes slideOutBottom {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
