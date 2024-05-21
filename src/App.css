@@ -50,20 +50,20 @@
 
 .logo {
   position: absolute;
-  left: 50%; /* Centrer horizontalement */
-  top: 50%; /* Commencer au milieu verticalement */
-  transform: translate(-50%, -50%); /* Ajuster pour un centrage précis */
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -50%); 
   animation: moveUp 2s ease-in-out forwards;
-  z-index: 9999; /* Appliquer l'animation */
+  z-index: 9999; 
 }
 
-/* Animation pour faire tourner le logo */
+
 @keyframes moveUp {
   from {
-    transform: translateY(0); /* Commence au milieu */
+    transform: translateY(0);
   }
   to {
-    transform: translateY(-48vh); /* Montez tout en haut */
+    transform: translateY(-48vh);
   }
 }
 
@@ -89,7 +89,7 @@
 
 }
 
-/* Animation pour ouvrir le haut vers le haut */
+
 @keyframes slideOutTop {
   from {
     transform: translateY(0);
@@ -99,7 +99,7 @@
   }
 }
 
-/* Animation pour ouvrir le bas vers le bas */
+
 @keyframes slideOutBottom {
   from {
     transform: translateY(0);
